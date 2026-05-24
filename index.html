@@ -3,143 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CUBINO Privacy Policy</title>
+  <title>CUBINO Support</title>
 
   <style>
+    :root {
+      --bg: #0A0E18;
+      --panel: rgba(255, 255, 255, 0.045);
+      --panel-soft: rgba(255, 255, 255, 0.06);
+      --border: rgba(255, 255, 255, 0.09);
+      --text: #ffffff;
+      --muted: rgba(255, 255, 255, 0.68);
+      --muted-soft: rgba(255, 255, 255, 0.48);
+      --accent: #6EA8FF;
+      --radius-lg: 28px;
+      --radius-md: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0A0E18;
-      color: #ffffff;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(110, 168, 255, 0.12), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       line-height: 1.7;
     }
 
-    h1, h2 {
-      color: #ffffff;
+    .container {
+      width: 100%;
+      max-width: 760px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 48px 32px;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
+      backdrop-filter: blur(16px);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 44px;
+      line-height: 1.05;
+      letter-spacing: -1.2px;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 34px;
+    }
+
+    .card {
+      background: var(--panel-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-top: 16px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 16px;
     }
 
     a {
-      color: #6EA8FF;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
     }
 
-    .container {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 32px;
+    a:hover {
+      opacity: 0.86;
     }
 
-    .muted {
-      opacity: 0.7;
+    .footer {
+      margin-top: 32px;
+      text-align: center;
+      color: var(--muted-soft);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px;
+      }
+
+      .container {
+        padding: 36px 22px;
+        border-radius: 24px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .card {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>CUBINO Privacy Policy</h1>
+  <main class="container">
+    <div class="eyebrow">Support</div>
 
-    <p class="muted">Last updated: May 2026</p>
+    <h1>CUBINO Support</h1>
 
-    <p>
-      CUBINO (“the Game”) respects your privacy. This Privacy Policy explains
-      what information may be collected when you use the Game and how it is used.
+    <p class="subtitle">
+      Thanks for playing CUBINO. If you have questions, found a bug,
+      want to suggest improvements, or just want to share feedback,
+      feel free to reach out anytime.
     </p>
 
-    <h2>Information We Collect</h2>
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:cubinosupport@gmail.com">cubinosupport@gmail.com</a>
+      </p>
+    </section>
 
-    <p>
-      CUBINO does not require users to create an account and does not directly
-      collect personal information such as names, addresses, or email addresses.
-    </p>
+    <section class="card">
+      <h2>Feedback & Bug Reports</h2>
+      <p>
+        Suggestions, bug reports, balance feedback, and ideas for future updates
+        are always welcome. Your feedback helps make CUBINO better.
+      </p>
+    </section>
 
-    <p>
-      The Game may locally store gameplay-related data on your device, including:
-    </p>
+    <section class="card">
+      <h2>Privacy Policy</h2>
+      <p>
+        You can view the Privacy Policy here:
+        <a href="./privacy.html">Open Privacy Policy</a>
+      </p>
+    </section>
 
-    <ul>
-      <li>High scores</li>
-      <li>Progression data</li>
-      <li>Unlocked cosmetics</li>
-      <li>Game settings</li>
-      <li>Statistics and gameplay preferences</li>
-    </ul>
-
-    <h2>Advertising</h2>
-
-    <p>
-      CUBINO may display advertisements through third-party advertising providers
-      such as Google AdMob.
-    </p>
-
-    <p>
-      These services may collect certain information automatically, including:
-    </p>
-
-    <ul>
-      <li>Device identifiers</li>
-      <li>Advertising identifiers</li>
-      <li>IP address</li>
-      <li>Approximate location</li>
-      <li>Device and usage information</li>
-      <li>Diagnostic and performance data</li>
-    </ul>
-
-    <p>
-      This information may be used to:
-    </p>
-
-    <ul>
-      <li>Provide and improve advertisements</li>
-      <li>Prevent fraud</li>
-      <li>Measure ad performance</li>
-      <li>Improve app stability and gameplay experience</li>
-    </ul>
-
-    <p>
-      Google Privacy Policy:
-      <br />
-      <a href="https://policies.google.com/privacy" target="_blank">
-        https://policies.google.com/privacy
-      </a>
-    </p>
-
-    <h2>Analytics and Diagnostics</h2>
-
-    <p>
-      The Game may collect anonymous analytics or crash diagnostic information
-      to help improve stability, performance, and gameplay experience.
-    </p>
-
-    <h2>Children’s Privacy</h2>
-
-    <p>
-      CUBINO is not directed toward children under the age of 13.
-    </p>
-
-    <h2>Data Deletion</h2>
-
-    <p>
-      Users may remove locally stored gameplay data by deleting the application
-      from their device.
-    </p>
-
-    <h2>Changes to This Privacy Policy</h2>
-
-    <p>
-      This Privacy Policy may be updated from time to time. Changes will be
-      reflected on this page.
-    </p>
-
-    <h2>Contact</h2>
-
-    <p>
-      CUBINO Support
-      <br />
-      cubinosupport@gmail.com
-    </p>
-  </div>
+    <div class="footer">
+      © 2026 Nikolas Kataja
+    </div>
+  </main>
 </body>
 </html>
